@@ -5,10 +5,12 @@ import SearchPage from "./Search/SearchPage/SearchPage";
 import Navigation from "./Navigation/Navigation";
 import { ThemeProvider } from "styled-components";
 import { ThemeLight } from "./Theme/ThemeLight";
+import { GlobalStyle } from "./AppStyles";
 
 const AppWithContexts = () => {
   return (
     <>
+      <GlobalStyle />
       <Router>
         <Navigation />
         <Switch>
