@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerOuter = styled.div`
-  padding: ${(p) => `${p.theme.spacing[5]}px`};
+  padding: ${(p) =>
+    `86px ${p.theme.spacing[5]}px ${p.theme.spacing[5]}px ${p.theme.spacing[5]}px`};
 `;
 
 export const ContainerTotal = styled.div`
