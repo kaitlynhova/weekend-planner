@@ -29,7 +29,7 @@ This repo is for a generic "Weekend planner" where you add, remove, and review s
     ```
     yarn start
     ```
-
+    > **Note:** you should be able to add/remove movies by clicking or tab + enter. If you select over 48 hours worth of movies (a weekend's worth) then the Checkout page has a nice surprise.
 3. Written test can be run by:
     ```
     jest utils
