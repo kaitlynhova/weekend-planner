@@ -10,6 +10,8 @@
 
 This repo is for a generic "Weekend planner" where you add, remove, and review selected movies you plan on watching in order to fill up your weekend (48 hours).
 
+**[View Live on Netlify](https://weekend-planner.netlify.app/)**
+
 ## Stack/packages/things to note
 - Bootstrapped with [Create React App + typescript](https://facebook.github.io/create-react-app/docs/getting-started).
 - [styled-components](https://styled-components.com/) for styles
