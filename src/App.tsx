@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { SelectedMoviesProvider } from "./SelectedMoviesContext";
 import CheckoutPage from "./Checkout/CheckoutPage/CheckoutPage";
 import SearchPage from "./Search/SearchPage/SearchPage";
 import Navigation from "./Navigation/Navigation";
@@ -27,9 +28,11 @@ const AppWithContexts = () => {
 };
 
 const App: React.FC = () => (
-  <ThemeProvider theme={ThemeLight}>
-    <AppWithContexts />
-  </ThemeProvider>
+  <SelectedMoviesProvider>
+    <ThemeProvider theme={ThemeLight}>
+      <AppWithContexts />
+    </ThemeProvider>
+  </SelectedMoviesProvider>
 );
 
 export default App;

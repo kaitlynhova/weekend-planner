@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
-import { MovieTypeSearchResult } from "../../types";
 import Movie from "../../Movie/Movie";
+import { MovieTypeSearchResult } from "../../types";
 import { useGetSearchData } from "../../hooks/useGetSearchData";
 
 const SearchPage: React.FC = () => {
