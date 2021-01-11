@@ -10,12 +10,13 @@
 
 This repo is for a generic "Weekend planner" where you add, remove, and review selected movies you plan on watching in order to fill up your weekend (48 hours).
 
-## Stack/packages to note
+## Stack/packages/things to note
 - Bootstrapped with [Create React App + typescript](https://facebook.github.io/create-react-app/docs/getting-started).
 - [styled-components](https://styled-components.com/) for styles
 - [react-use](https://github.com/streamich/react-use) for localStorage hook
 - [constate](https://github.com/diegohaz/constate) for context hook
 - [canvas-confetti](https://github.com/catdad/canvas-confetti) for fun reasons.
+- Components use [Deductive Component Language](https://www.hovalabs.com/blog/deductive-component-language)
 
 
 ## Starting the app
