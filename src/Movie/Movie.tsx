@@ -11,7 +11,12 @@ const Movie: React.FC<{
   movieID: string;
 }> = ({ movieID }) => {
   const { data: movie } = useGetMovieData(movieID);
-  const { selectedMovies, setSelectedMovies } = useSelectedMovies();
+  const {
+    selectedMovies,
+    selectedMoviesRunTime,
+    setSelectedMoviesRunTime,
+    setSelectedMovies,
+  } = useSelectedMovies();
 
   const onClick = (movie: MovieType) => {
     const movieExists = selectedMovies.includes(movie.imdbID);
@@ -20,6 +25,12 @@ const Movie: React.FC<{
       ? selectedMovies.slice().filter((id: string) => id !== movie.imdbID)
       : [...selectedMovies, movie.imdbID];
     setSelectedMovies(newSelectedMovies);
+    // set total movies run time
+    const movieMinutesRunTime = JSON.parse(movie.Runtime.replace(" min", ""));
+    const newRunTimes = movieExists
+      ? selectedMoviesRunTime - movieMinutesRunTime
+      : selectedMoviesRunTime + movieMinutesRunTime;
+    setSelectedMoviesRunTime(newRunTimes);
   };
 
   // bail if data not defined
