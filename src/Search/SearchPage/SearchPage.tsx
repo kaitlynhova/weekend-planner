@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { MovieTypeSearchResult } from "../../types";
+import Movie from "../../Movie/Movie";
 import { useGetSearchData } from "../../hooks/useGetSearchData";
 
 const SearchPage: React.FC = () => {
@@ -19,7 +20,7 @@ const SearchPage: React.FC = () => {
       <SearchBar onSearch={onSearch} />
       {shouldDisplayMovie &&
         movieSearchResults.map((movie: MovieTypeSearchResult) => (
-          <p key={movie.imdbID}>{movie.Title}</p>
+          <Movie key={movie.imdbID} movieID={movie.imdbID} />
         ))}
     </main>
   );
