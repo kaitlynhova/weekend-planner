@@ -8,7 +8,7 @@
 
 
 
-This repo is for a generic "Weekend planner" where you add, remove, and review selected movies you plan on watching in order to fill up your weekend (48 hours).
+This repo is for a generic "Weekend planner" where you add, remove, and review selected movies you plan on watching in order to fill up your weekend (48 hours). It was done in 4 hours and is by no means complete, but it does have some cool examples of how I like to code in it.
 
 **[View Live on Netlify](https://weekend-planner.netlify.app/)**
 
